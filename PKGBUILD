@@ -3,7 +3,7 @@
 _realname=go
 pkgname=${_realname}-bin
 pkgver=1.20.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Core compiler tools for the Go programming language"
 replaces=(go)
 provides=(go)
@@ -42,8 +42,8 @@ package() {
   install -Dm644 LICENSE "${pkgdir}${MSYSTEM_PREFIX}/share/licenses/go/LICENSE"
  
   # install profile script 
-  mkdir -p "${pkgdir}${MSYSTEM_PREFIX}"/etc/profile.d
-  echo "export GOROOT=${MSYSTEM_PREFIX}/lib/go" > "${pkgdir}${MSYSTEM_PREFIX}"/etc/profile.d/go.sh
-  cp "${pkgdir}${MSYSTEM_PREFIX}"/etc/profile.d/go.{sh,zsh}
+  mkdir -p "${pkgdir}"/etc/profile.d
+  echo "export GOROOT=${MSYSTEM_PREFIX}/lib/go" > "${pkgdir}"/etc/profile.d/go.sh
+  cp "${pkgdir}"/etc/profile.d/go.{sh,zsh}
 }
 

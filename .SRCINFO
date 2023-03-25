@@ -1,7 +1,7 @@
 pkgbase = go-bin
 	pkgdesc = Core compiler tools for the Go programming language
 	pkgver = 1.20.2
-	pkgrel = 1
+	pkgrel = 3
 	url = https://go.dev/
 	install = go-bin.install
 	arch = i686
