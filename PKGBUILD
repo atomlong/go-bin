@@ -3,7 +3,7 @@
 _realname=go
 pkgname=${_realname}-bin
 pkgver=1.20.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Core compiler tools for the Go programming language"
 replaces=(go)
 provides=(go)
@@ -19,7 +19,7 @@ sha256sums_x86_64=('fe439f0e438f7555a7f5f7194ddb6f4a07b0de1fa414385d19f2aeb26d9f
 install="${pkgname}.install"
 
 prepare() {
-export MSYS="winsymlinks:lnk"
+export MSYS="winsymlinks:native"
 }
 
 package() {

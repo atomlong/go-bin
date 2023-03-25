@@ -1,12 +1,12 @@
 post_install() {
     [ -h ${MSYSTEM_PREFIX}/bin/go ] || {
-    MSYS="winsymlinks:lnk" ln -sf "${MSYSTEM_PREFIX}/lib/go/bin/go" ${MSYSTEM_PREFIX}/bin/go
+    MSYS="winsymlinks:native" ln -sf "${MSYSTEM_PREFIX}/lib/go/bin/go" ${MSYSTEM_PREFIX}/bin/go
     }
 	[ -h ${MSYSTEM_PREFIX}/bin/gofmt ] || {
-    MSYS="winsymlinks:lnk" ln -sf "${MSYSTEM_PREFIX}/lib/go/bin/gofmt" ${MSYSTEM_PREFIX}/bin/gofmt
+    MSYS="winsymlinks:native" ln -sf "${MSYSTEM_PREFIX}/lib/go/bin/gofmt" ${MSYSTEM_PREFIX}/bin/gofmt
     }
 	[ -h ${MSYSTEM_PREFIX}/lib/go/doc ] || {
-    MSYS="winsymlinks:lnk" ln -sf "${MSYSTEM_PREFIX}/share/doc/go" ${MSYSTEM_PREFIX}/lib/go/doc
+    MSYS="winsymlinks:native" ln -sf "${MSYSTEM_PREFIX}/share/doc/go" ${MSYSTEM_PREFIX}/lib/go/doc
     }
 	return 0
 }
