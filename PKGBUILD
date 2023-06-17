@@ -2,8 +2,8 @@
 
 _realname=go
 pkgname=${_realname}-bin
-pkgver=1.20.2
-pkgrel=3
+pkgver=1.20.5
+pkgrel=1
 pkgdesc="Core compiler tools for the Go programming language"
 replaces=(go)
 provides=(go)
@@ -14,8 +14,8 @@ options=(!strip staticlibs)
 arch=('i686' 'x86_64')
 source_i686=("https://go.dev/dl/go${pkgver}.windows-386.zip")
 source_x86_64=("https://go.dev/dl/go${pkgver}.windows-amd64.zip")
-sha256sums_i686=('31838b291117495bbb93683603e98d5118bfabd2eb318b4d07540bfd524bab86')
-sha256sums_x86_64=('fe439f0e438f7555a7f5f7194ddb6f4a07b0de1fa414385d19f2aeb26d9f43db')
+sha256sums_i686=('af6655ad9eff15baebb738b7b416f0f67037b1cd03036bfa4e8aede393fb7c44')
+sha256sums_x86_64=('c04a4ed73c3624d5b4c4f62e44a141549cc0bfd83a7492c31ca8b86b3752f077')
 install="${pkgname}.install"
 
 prepare() {
